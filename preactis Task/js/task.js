@@ -34,5 +34,4 @@ document.getElementById('coupon-btn').addEventListener('click', function () {
         addDiscount.innerText = "Invalid Coupon";
         addDiscount.style.color = "red"
     }
-
 })
