@@ -16,6 +16,10 @@ document.getElementById('coupon-btn').addEventListener('click', function () {
 
     const couponInput = document.getElementById('coupon-input');
     const couponInputValue = couponInput.value;
+    if (couponInputValue === "") {
+        alert("Please input Coupon Number")
+        return;
+    }
 
     if (couponInputValue === "DISC30") {
         const addDiscount = document.getElementById('add-discount');
@@ -27,7 +31,7 @@ document.getElementById('coupon-btn').addEventListener('click', function () {
     else {
         const addDiscount = document.getElementById('add-discount');
         const addDiscountValue = addDiscount.innerText;
-        addDiscount.innerText = "Please Provide Valid Coupon";
+        addDiscount.innerText = "Invalid Coupon";
         addDiscount.style.color = "red"
     }
 
