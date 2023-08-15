@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<style>
+    section {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        margin-top: 25px;
+    }
+
+    .BIG {
+        font-size: 70px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+</style>
+
+
+<body class="flex">
+    <section>
+        <div class="">
+            <h1 class="text-3xl font-bold"><span class="text-5xl text-lime-600 ">BIG</span> Discount!!!</h1>
+            <p class="text-2xl font-bold mt-4">Price: <span>1000</span></p>
+            <p id="discount-display" class="text-2xl font-bold mt-4">Discount: 30%</p>
+            <p class="text-2xl font-bold mt-4" id="price">Please PAY:1000 <span></span></p>
+            <button class="bg-gray-300 px-5 py-3 mt-5 rounded-xl hover:bg-gray-900 hover:text-lime-600"
+                id="btn-discount">Get
+                Offer</button>
+        </div>
+    </section>
+
+    <section>
+        <div class="">
+            <h1 class="text-3xl font-bold"><span class="text-5xl text-lime-600 ">BIG</span> Discount!!!</h1>
+            <p class="text-2xl font-bold mt-4 mb-3">Price:1000</p>
+            <p>
+                <span class="text-2xl font-bold mt-4">Coupon :</span>
+                <span><input id="coupon-input" class="bg-gray-100 rounded-md py-2 pl-2 border" type="text"
+                        placeholder=" Type Your Coupon hear"></span>
+            </p>
+            <p id="add-discount" class="text-2xl font-bold mt-4" id="price">Please PAY: 1000</p>
+            <button class="bg-gray-300 px-5 py-3 mt-5 rounded-xl hover:bg-gray-900 hover:text-lime-600"
+                id="coupon-btn">Get
+                Offer</button>
+        </div>
+    </section>
+
+
+    <script src="./js/task.js"></script>
+</body>
+
+</html>
