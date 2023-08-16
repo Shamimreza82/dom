@@ -9,37 +9,46 @@
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
-
-
 </head>
 
-<body class="bg-lime-200">
+<style>
+    .text-decoration {
+        text-transform: uppercase;
+        text-align: justify;
+    }
+</style>
 
+
+<body class="bg-lime-200">
     <section>
         <h1 class="text-4xl text-center mt-5 font-bold"> My Text Editor</h1>
-        <div class="w-3/4 border h-[500px] m-auto mt-2 bg-slate-100 shadow-md">
+        <div class=" w-3/4 border h-[500px] m-auto mt-2 bg-slate-100 shadow-md ">
             <div class="flex justify-around mt-3">
                 <div class="flex gap-4">
-                    <p><i class="fa-solid fa-bold"></i></p>
-                    <p><i class="fa-solid fa-italic"></i></p>
-                    <p><i class="fa-solid fa-underline"></i></p>
+                    <p><i id="bold" class="fa-solid fa-bold hover:bg-slate-300  rounded-md"></i></p>
+                    <p><i id="italic" class="fa-solid fa-italic hover:bg-slate-300  rounded-md"></i></p>
+                    <p><i id="underline" class="fa-solid fa-underline hover:bg-slate-300  rounded-md"></i></p>
                 </div>
                 <div class="flex gap-4">
-                    <p><i class="fa-solid fa-align-left"></i></p>
-                    <p><i class="fa-solid fa-align-center"></i></p>
-                    <p><i class="fa-solid fa-align-right"></i></p>
-                    <p><i class="fa-solid fa-align-justify"></i></p>
+                    <p><i id="left" class="fa-solid fa-align-left hover:bg-slate-300  rounded-md"></i></p>
+                    <p><i id="center" class="fa-solid fa-align-center hover:bg-slate-300  rounded-md"></i></p>
+                    <p><i id="right" class="fa-solid fa-align-right hover:bg-slate-300  rounded-md"></i></p>
+                    <p><i id="justify" class="fa-solid fa-align-justify hover:bg-slate-300 rounded-md"></i>
+                    </p>
                 </div>
                 <div class="flex gap-4">
-                    <p><i class="fa-solid fa-font"></i></p>
-                    <p>Aa</p>
-                    <p>Color</p>
+                    <p><i id="font-size" class="fa-solid fa-font hover:bg-slate-300  rounded-md"></i></p>
+                    <p id="text-decoration" class="hover:bg-slate-300  rounded-md">Aa</p>
+                    <p id="colorBtn">Color</p>
+                    <input id="color" type="color">
                 </div>
             </div>
             <hr class="w-3/4 m-auto mt-4">
             <div class="flex ">
-                <textarea class="border m-auto mt-4 " name="" id="" cols="130" rows="17"> Shamim Reza  </textarea>
+                <textarea class="border m-auto mt-4 h-[410px] w-[980px] p-2 " name="Massage" id="testArea" cols="130"
+                    rows="17"></textarea>
             </div>
+
         </div>
     </section>
 
