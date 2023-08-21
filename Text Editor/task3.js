@@ -5,6 +5,7 @@ document.getElementById('bold').addEventListener('click', function (event) {
     const textValue = bold.value;
     bold.value = textValue;
     bold.style.fontWeight = "bold"
+    return;
 })
 
 document.getElementById('italic').addEventListener('click', function (event) {
@@ -59,20 +60,13 @@ document.getElementById('justify').addEventListener('click', function () {
     justify.style.textAlign = "justify";
 })
 
-document.getElementById('colorBtn').addEventListener('click', function () {
-
-    const colorPicker = document.getElementById('testArea');
-    const colorPickerValue = colorPicker.value;
-
-    const color = document.getElementById('color');
-    const textValue = color.value;
-    color.value = colorPickerValue;
 
 
-})
+const textElement = document.getElementById('textElement');
+const increaseSizeButton = document.getElementById('increaseSizeButton');
 
 
 
+increaseSizeButton.addEventListener('click', function () {
 
-
-
+});

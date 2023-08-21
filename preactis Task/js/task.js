@@ -1,15 +1,15 @@
 
-// document.getElementById('btn-discount').addEventListener('click', function () {
+document.getElementById('btn-discount').addEventListener('click', function () {
 
-//     const discount = document.getElementById('price');
-//     const getInnerText = discount.innerText;
-//     discount.innerText = `Wow!! You Got 30% discount: 
-//                             (Pay: 700 Taka)`;
+    const discount = document.getElementById('price');
+    const getInnerText = discount.innerText;
+    discount.innerText = `Wow!! You Got 30% discount: 
+                            (Pay: 700 Taka)`;
 
-//     const discountDisplay = document.getElementById('discount-display');
-//     const displeyHide = discountDisplay.innerText;
-//     discountDisplay.innerText = "";
-// })
+    const discountDisplay = document.getElementById('discount-display');
+    const displeyHide = discountDisplay.innerText;
+    discountDisplay.innerText = "";
+})
 
 
 document.getElementById('coupon-btn').addEventListener('click', function () {
